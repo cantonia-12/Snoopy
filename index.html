@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snoopy — El beagle más famoso del mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rojo: #c41e3a;
+      --rojo-oscuro: #8b1428;
+      --crema: #fff8f0;
+      --amarillo: #ffd166;
+      --cielo: #7ec8e3;
+      --texto: #2b2b2b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Nunito", sans-serif;
+      background: linear-gradient(180deg, #b8e0f2 0%, #fff8f0 280px);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--rojo);
+      color: white;
+      text-align: center;
+      padding: 48px 20px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: var(--crema);
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    }
+
+    h1 {
+      font-family: "Fredoka", sans-serif;
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      letter-spacing: 1px;
+      text-shadow: 2px 3px 0 var(--rojo-oscuro);
+    }
+
+    .subtitulo {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      margin-top: 8px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 16px 12px;
+      background: var(--crema);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 3px solid var(--rojo);
+    }
+
+    nav a {
+      color: var(--rojo-oscuro);
+      text-decoration: none;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: white;
+      border: 2px solid var(--rojo);
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: var(--rojo);
+      color: white;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 18px 80px;
+    }
+
+    section {
+      background: white;
+      border-radius: 22px;
+      padding: 28px 24px;
+      margin: 28px 0;
+      box-shadow: 0 10px 0 var(--rojo);
+      border: 3px solid #222;
+    }
+
+    h2 {
+      font-family: "Fredoka", sans-serif;
+      color: var(--rojo);
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 1.08rem;
+    }
+
+    .foto {
+      width: 100%;
+      border-radius: 16px;
+      border: 4px solid #222;
+      margin: 16px 0 8px;
+      display: block;
+      background: #eee;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 0.92rem;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin: 8px 0 12px 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 0.95rem;
+    }
+
+    footer strong {
+      color: var(--amarillo);
+    }
+
+    .nota {
+      background: #fff3cd;
+      border: 2px dashed #c41e3a;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 18px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¡Snoopy!</h1>
+    <p class="subtitulo">El beagle soñador que vive encima de su casa roja</p>
+  </header>
+
+  <nav>
+    <a href="#quien">¿Quién es?</a>
+    <a href="#as">As de la aviación</a>
+    <a href="#escritor">El escritor</a>
+    <a href="#amigo">Su mejor amigo</a>
+  </nav>
+
+  <main>
+    <section id="quien">
+      <h2>1. ¿Quién es Snoopy?</h2>
+      <p>
+        Snoopy es un perro beagle blanco con orejas negras. Es el mascota de Charlie Brown
+        en la tira cómica <strong>Peanuts</strong>, creada por Charles M. Schulz.
+      </p>
+      <p>
+        Aunque es un perro, Snoopy se comporta casi como una persona: piensa en voz alta,
+        inventa historias y pasa gran parte del día sentado en el techo de su caseta roja.
+      </p>
+      <figure>
+        <img src="images/1.jpg" alt="Snoopy sentado sobre su caseta roja">
+      <p>
+        Le encanta la comida (sobre todo la cena), dormir, imaginar aventuras
+        y molestar un poquito a Charlie Brown… pero siempre con cariño.
+      </p>
+    </section>
+
+    <section id="as">
+      <h2>2. El As de la Aviación</h2>
+      <p>
+        Una de las personalidades más famosas de Snoopy es el
+        <strong>As de la Primera Guerra Mundial</strong> (World War I Flying Ace).
+      </p>
+      <p>
+        En su imaginación, la caseta roja se convierte en un avión de combate.
+        Snoopy se pone gafas de piloto y una bufanda, y sale a perseguir
+        al Barón Rojo por el cielo.
+      </p>
+      <figure>
+        <img class="foto" src="images/2.jpg" alt="Snoopy como piloto de avión sobre su caseta">
+        <figcaption>Curse you, Red Baron! — Snoopy despega desde su caseta-avión.</figcaption>
+      </figure>
+      <p>
+        Esta aventura aparece en muchos cómics y también en películas y especiales
+        de televisión. Es un ejemplo de cómo Snoopy usa la imaginación para
+        vivir mil vidas distintas.
+      </p>
+    </section>
+
+    <section id="escritor">
+      <h2>3. Snoopy, el gran escritor</h2>
+      <p>
+        Otra de sus personalidades favoritas es la del <strong>novelista</strong>.
+        Se sienta frente a una máquina de escribir (encima de la caseta, por supuesto)
+        y empieza sus historias con la frase más famosa:
+      </p>
+      <p style="text-align:center;font-weight:800;font-size:1.25rem;color:var(--rojo);">
+        “Era una noche oscura y tormentosa…”
+      </p>
+      <figure>
+        <img class="foto" src="images/3.jpg" alt="Snoopy escribiendo en una máquina de escribir">
+        <figcaption>Snoopy trabajando en su próxima novela best-seller.</figcaption>
+      </figure>
+      <p>
+        Casi nunca termina el libro, y sus editores imaginarios suelen rechazar
+        los manuscritos. Aun así, Snoopy no se rinde: sigue escribiendo
+        con mucha confianza y un poquito de vanidad.
+      </p>
+    </section>
+
+    <section id="amigo">
+      <h2>4. Woodstock, su mejor amigo</h2>
+      <p>
+        Woodstock es un pajarito amarillo muy pequeño que habla con
+        rayitas y píos que solo Snoopy entiende.
+      </p>
+      <p>
+        Es el secretario de Snoopy, su copiloto y su compañero de juegos.
+        Juntos hacen deportes (aunque Woodstock casi siempre pierde),
+        viajan y se cuidan el uno al otro.
+      </p>
+      <figure>
+        <img class="foto" src="images/4.jpg" alt="Snoopy abrazando a su amigo el pajarito amarillo">
+        <figcaption>Snoopy y Woodstock: una amistad para toda la vida.</figcaption>
+      </figure>
+      <p>Otras personalidades divertidas de Snoopy:</p>
+      <ul>
+        <li><strong>Joe Cool</strong> — el universitario con lentes de sol que se apoya en la caseta.</li>
+        <li><strong>El abogado</strong> — con corbata y maletín.</li>
+        <li><strong>El chef</strong> y el jugador de beisbol del equipo de Charlie Brown.</li>
+      </ul>
+
+      <div class="nota">
+        <strong>Para GitHub Pages:</strong> este archivo se llama <code>index.html</code>
+        y las fotos están en la carpeta <code>images/</code> con los nombres
+        <code>snoopy1.jpg</code>, <code>snoopy2.jpg</code>, <code>snoopy3.jpg</code>
+        y <code>snoopy4.jpg</code>. Sube la carpeta completa (el HTML + la carpeta images)
+        a tu repositorio para que las imágenes se vean.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Presentación hecha para aprender HTML + GitHub Pages<br>
+    Personaje inspirado en <strong>Snoopy</strong> · Peanuts · Charles M. Schulz
+  </footer>
+</body>
+</html>
